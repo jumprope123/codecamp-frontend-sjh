@@ -1,0 +1,9 @@
+function useState(aaa) {
+        const myState = aaa; // aaa를 사용해서 state의 초기값 설정
+        const mySetState = (bbb) =>{
+            console.log(mySetState+ "애서" + bbb + "로 myState를 변경하겠습니다.")
+            console.log('변경된 '+bbb+" 를 사용해서 컴포넌트를 리렌더링합니다")
+        }
+
+    return [myState,mySetState]
+}
